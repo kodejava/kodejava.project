@@ -5,7 +5,10 @@
     <groupId>org.kodejava.example</groupId>
     <artifactId>kodejava-project</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>kodejava-commons</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <name>kodejava-project</name>
     <url>http://maven.apache.org</url>
