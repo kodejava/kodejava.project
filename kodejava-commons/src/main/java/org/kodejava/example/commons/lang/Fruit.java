@@ -38,10 +38,10 @@ public class Fruit implements Comparable<Fruit> {
     }
 
     /*
-         * Generating compareTo() method using CompareToBuilder class. For other
-         * alternative way we can also use the CompareToBuilder.reflectionCompare()
-         * method to implement the compareTo() method.
-         */
+     * Generating compareTo() method using CompareToBuilder class. For other
+     * alternative way we can also use the CompareToBuilder.reflectionCompare()
+     * method to implement the compareTo() method.
+     */
     public int compareTo(Fruit fruit) {
         return new CompareToBuilder()
             .append(this.name, fruit.name)
