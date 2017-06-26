@@ -26,6 +26,7 @@
 
     <modules>
         <module>kodejava-commons</module>
+        <module>kodejava-swing</module>
     </modules>
 
     <properties>
