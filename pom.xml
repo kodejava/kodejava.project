@@ -27,6 +27,7 @@
     <modules>
         <module>kodejava-commons</module>
         <module>kodejava-swing</module>
+        <module>maven-helloworld</module>
     </modules>
 
     <properties>
