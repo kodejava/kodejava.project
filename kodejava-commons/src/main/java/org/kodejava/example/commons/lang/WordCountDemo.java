@@ -7,7 +7,7 @@ public class WordCountDemo {
         // We have the source text we'll do the search on.
         String source = "From the download page, you can download the Java " +
             "Tutorials for browsing offline. Or you can just download " +
-            "the examples.";
+            "the example.";
         // The word we want to count its occurrences
         String word = "you";
 
