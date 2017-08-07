@@ -17,9 +17,9 @@ public class SqlSessionDemo {
         SqlSessionFactory factory = demo.getSessionFactory();
 
         // Create an SqlSession by using the factory.openSession() method.
-        // It is a good practice to use a try-finally block when working
-        // with an SqlSession where you can close the session in the 
-        // finally block when it finishes the job.
+        // It is a good practice to use a try-with-resources block when
+        // working with an SqlSession. The session will be automatically
+        // closes when it finishes the job.
         try (SqlSession session = factory.openSession()) {
             Record record = session.selectOne("getRecord", 1L);
             System.out.println("Record = " + record);
@@ -32,9 +32,8 @@ public class SqlSessionDemo {
      * @return an SqlSessionFactory.
      * @throws IOException when fail to read the configuration file.
      */
-    public SqlSessionFactory getSessionFactory() throws IOException {
+    private SqlSessionFactory getSessionFactory() throws IOException {
         Reader reader = Resources.getResourceAsReader("configuration.xml");
-
         SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
         return builder.build(reader);
     }
