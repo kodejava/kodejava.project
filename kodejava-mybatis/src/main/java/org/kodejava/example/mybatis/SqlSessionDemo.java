@@ -20,12 +20,9 @@ public class SqlSessionDemo {
         // It is a good practice to use a try-finally block when working
         // with an SqlSession where you can close the session in the 
         // finally block when it finishes the job.
-        SqlSession session = factory.openSession();
-        try {
-            Record record = (Record) session.selectOne("getRecord", 1);
+        try (SqlSession session = factory.openSession()) {
+            Record record = session.selectOne("getRecord", 1L);
             System.out.println("Record = " + record);
-        } finally {
-            session.close();
         }
     }
 
@@ -36,8 +33,7 @@ public class SqlSessionDemo {
      * @throws IOException when fail to read the configuration file.
      */
     public SqlSessionFactory getSessionFactory() throws IOException {
-        String res = "configuration.xml";
-        Reader reader = Resources.getResourceAsReader(res);
+        Reader reader = Resources.getResourceAsReader("configuration.xml");
 
         SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
         return builder.build(reader);

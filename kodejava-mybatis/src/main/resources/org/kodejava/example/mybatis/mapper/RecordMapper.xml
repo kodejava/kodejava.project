@@ -10,7 +10,7 @@
         <result column="label_id" property="labelId"/>
     </resultMap>
 
-    <select id="getRecord" parameterType="int" resultMap="recordResultMap">
+    <select id="getRecord" parameterType="java.lang.Long" resultMap="recordResultMap">
         SELECT
             id,
             title,
