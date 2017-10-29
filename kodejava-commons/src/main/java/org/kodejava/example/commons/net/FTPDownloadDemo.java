@@ -13,11 +13,13 @@ public class FTPDownloadDemo {
 
         FTPClient client = new FTPClient();
         try (OutputStream os = new FileOutputStream(filename)) {
-            client.connect("ftp.example.org");
-            client.login("admin", "admin123**");
+            client.connect("localhost");
+            client.login("wsaryada", "wayanb0611");
 
             // Download file from FTP server.
-            client.retrieveFile("/" + filename, os);
+            boolean status = client.retrieveFile(filename, os);
+            System.out.println("status = " + status);
+            System.out.println("reply  = " + client.getReplyString());
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

@@ -11,8 +11,8 @@ public class FTPListDemo {
         FTPClient client = new FTPClient();
 
         try {
-            client.connect("ftp.example.org");
-            client.login("admin", "admin123**");
+            client.connect("localhost");
+            client.login("wsaryada", "wayanb0611");
 
             if (client.isConnected()) {
                 // Obtain a list of filenames in the current working

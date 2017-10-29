@@ -33,6 +33,9 @@
         <module>kodejava-basic</module>
         <module>kodejava-util-package</module>
         <module>kodejava-mybatis</module>
+        <module>kodejava-streams-api</module>
+        <module>kodejava-webapp</module>
+        <module>kodejava-text-package</module>
     </modules>
 
     <properties>
