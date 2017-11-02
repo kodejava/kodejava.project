@@ -30,6 +30,7 @@
         <module>maven-helloworld</module>
         <module>kodejava-poi</module>
         <module>kodejava-lang-package</module>
+        <module>kodejava-mail</module>
         <module>kodejava-basic</module>
         <module>kodejava-util-package</module>
         <module>kodejava-mybatis</module>
