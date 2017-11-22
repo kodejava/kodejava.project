@@ -37,6 +37,9 @@
         <module>kodejava-streams-api</module>
         <module>kodejava-webapp</module>
         <module>kodejava-text-package</module>
+        <module>kodejava-io</module>
+        <module>kodejava-2d-api</module>
+        <module>kodejava-awt</module>
     </modules>
 
     <properties>

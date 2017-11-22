@@ -1,0 +1,3 @@
+The code snippet below is an example of how to read a text file using BufferedReader from the java.io package. This snippet read a text file called test.txt and print out its content.
+
+To create an instance of java.io.BufferedReader we do the following steps:
