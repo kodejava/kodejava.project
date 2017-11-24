@@ -40,6 +40,7 @@
         <module>kodejava-io</module>
         <module>kodejava-2d-api</module>
         <module>kodejava-awt</module>
+        <module>kodejava-xml</module>
     </modules>
 
     <properties>
