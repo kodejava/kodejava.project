@@ -41,6 +41,9 @@
         <module>kodejava-2d-api</module>
         <module>kodejava-awt</module>
         <module>kodejava-xml</module>
+        <module>kodejava-print-service</module>
+        <module>kodejava-math</module>
+        <module>kodejava-jndi</module>
     </modules>
 
     <properties>
