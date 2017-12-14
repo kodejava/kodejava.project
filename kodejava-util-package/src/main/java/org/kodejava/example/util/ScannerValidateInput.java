@@ -26,7 +26,7 @@ public class ScannerValidateInput {
     }
 
     private void validateLetter() {
-        String guestWord = "Hello";
+        String secretWord = "Hello";
         Scanner scanner = new Scanner(System.in);
 
         int length = 0;
@@ -38,9 +38,9 @@ public class ScannerValidateInput {
                 guess.append(letter);
                 length++;
             }
-        } while (length < guestWord.length());
+        } while (length < secretWord.length());
 
-        if (guestWord.equals(guess.toString())) {
+        if (secretWord.equalsIgnoreCase(guess.toString())) {
             System.out.println("You are correct!");
         } else {
             System.out.println("Please try again!");

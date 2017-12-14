@@ -44,6 +44,8 @@
         <module>kodejava-print-service</module>
         <module>kodejava-math</module>
         <module>kodejava-jndi</module>
+        <module>kodejava-tools</module>
+        <module>kodejava-cryptography</module>
     </modules>
 
     <properties>
