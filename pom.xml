@@ -46,6 +46,7 @@
         <module>kodejava-jndi</module>
         <module>kodejava-tools</module>
         <module>kodejava-cryptography</module>
+        <module>kodejava-management</module>
     </modules>
 
     <properties>
