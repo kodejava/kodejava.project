@@ -8,7 +8,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>kodejava-jndi</artifactId>
     <packaging>war</packaging>
-    <name>kodejava-jndi Maven Webapp</name>
+    <name>kodejava-jndi</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>

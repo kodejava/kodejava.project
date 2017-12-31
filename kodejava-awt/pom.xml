@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>kodejava-awt-example</artifactId>
+    <artifactId>kodejava-awt</artifactId>
     <packaging>jar</packaging>
 
-    <name>kodejava-awt-example</name>
+    <name>kodejava-awt</name>
     <url>http://maven.apache.org</url>
 
     <properties>

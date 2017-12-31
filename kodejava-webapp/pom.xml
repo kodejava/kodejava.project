@@ -9,7 +9,7 @@
     <artifactId>kodejava-webapp</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>kodejava-webapp Maven Webapp</name>
+    <name>kodejava-webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
