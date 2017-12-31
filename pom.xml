@@ -47,18 +47,13 @@
         <module>kodejava-tools</module>
         <module>kodejava-cryptography</module>
         <module>kodejava-management</module>
+        <module>kodejava-generics</module>
+        <module>kodejava-junit</module>
+        <module>kodejava-network</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 </project>

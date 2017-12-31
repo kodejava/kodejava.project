@@ -1,8 +1,11 @@
 package org.kodejava.example.swing;
 
 import javax.swing.*;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeCellRenderer;
+import javax.swing.tree.TreeSelectionModel;
 import java.awt.*;
 import java.net.URL;
 
@@ -71,6 +74,23 @@ public class JTreeDifferentNodeIcon extends JFrame {
 
         final JTree tree = new JTree(root);
         tree.setCellRenderer(new CountryTreeCellRenderer());
+        tree.putClientProperty("JTree.lineStyle", "Horizontal");
+        tree.getSelectionModel().setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
+        tree.addTreeSelectionListener(new TreeSelectionListener() {
+            @Override
+            public void valueChanged(TreeSelectionEvent e) {
+                DefaultMutableTreeNode node = (DefaultMutableTreeNode) tree.getLastSelectedPathComponent();
+                if (node == null) {
+                    return;
+                }
+
+                Object nodeInfo = node.getUserObject();
+                if (node.isLeaf()) {
+                    Country country = (Country) nodeInfo;
+                    System.out.println("country = " + country.getName());
+                }
+            }
+        });
 
         JScrollPane pane = new JScrollPane(tree);
         pane.setPreferredSize(new Dimension(200, 400));
