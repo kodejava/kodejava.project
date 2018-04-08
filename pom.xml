@@ -48,8 +48,7 @@
         <module>kodejava-cryptography</module>
         <module>kodejava-management</module>
         <module>kodejava-generics</module>
-        <module>kodejava-junit</module>
-        <module>kodejava-network</module>
+        <module>kodejava-jpos</module>
     </modules>
 
     <properties>
