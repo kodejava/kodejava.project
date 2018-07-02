@@ -49,6 +49,9 @@
         <module>kodejava-management</module>
         <module>kodejava-generics</module>
         <module>kodejava-jpos</module>
+        <module>kodejava-network</module>
+        <module>kodejava-jackson</module>
+        <module>kodejava-jdbc</module>
     </modules>
 
     <properties>
