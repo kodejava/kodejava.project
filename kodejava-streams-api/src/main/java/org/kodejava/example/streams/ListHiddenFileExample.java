@@ -1,9 +1,3 @@
-/*
- * $Id:$
- * ---------------------------------------------------------------------------------------------------------------------
- * Copyright (c) 2017 - PT Sigma Cipta Caraka. All rights reserved.
- * http://www.telkomsigma.co.id
- */
 package org.kodejava.example.streams;
 
 import java.io.File;
@@ -18,7 +12,12 @@ import java.io.FilenameFilter;
  */
 public class ListHiddenFileExample {
     public static void main(String[] args) {
-        File[] files = new File(".").listFiles(File::isHidden);
+        File[] files = new File(".").listFiles(new FilenameFilter() {
+            @Override
+            public boolean accept(File dir, String name) {
+                return false;
+            }
+        });
 
         if (files != null) {
             for (File file : files) {

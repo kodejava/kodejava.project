@@ -20,17 +20,20 @@ public class PrimitiveStreamExample {
         int cityPopulationB = 250000;
         float cityTempB = 10.45f;
 
-        // Create an instance of FileOutputStream with cities.dat
-        // as the file name to be created. Then we pass the input
-        // stream object in the DataOutputStream constructor.
+        /*
+        Create an instance of FileOutputStream with cities.dat as the file
+        name to be created. Then we pass the input stream object in the
+        DataOutputStream constructor.
+        */
         try (FileOutputStream fos = new FileOutputStream("cities.dat");
              DataOutputStream dos = new DataOutputStream(fos)) {
 
-            // Below we write some data to the cities.dat.
-            // DataOutputStream class have various method that allow
-            // us to write primitive type data and string. There are
-            // method called writeInt(), writeFloat(), writeUTF(),
-            // etc.
+            /*
+             Below we write some data to the cities.dat. DataOutputStream
+             class have various method that allow us to write primitive type
+             data and string. There are method called writeInt(),
+             writeFloat(), writeUTF(), etc.
+            */
             dos.writeInt(cityIdA);
             dos.writeUTF(cityNameA);
             dos.writeInt(cityPopulationA);
@@ -44,13 +47,13 @@ public class PrimitiveStreamExample {
             e.printStackTrace();
         }
 
-        // Now we have a cities.dat file with some data in it.
-        // Next you'll see how easily we can read back this
-        // data and display it. Just like the DataOutputStream
-        // the DataInputStream class have the corresponding
-        // read methods to read data from the file. Some of
-        // the method names are readInt(), readFloat(),
-        // readUTF(), etc.
+        /*
+         Now we have a cities.dat file with some data in it. Next you'll see
+         how easily we can read back this data and display it. Just like the
+         DataOutputStream the DataInputStream class have the corresponding
+         read methods to read data from the file. Some of the method names
+         are readInt(), readFloat(), readUTF(), etc.
+        */
         try (FileInputStream fis = new FileInputStream("cities.dat");
              DataInputStream dis = new DataInputStream(fis)) {
 
@@ -60,10 +63,7 @@ public class PrimitiveStreamExample {
             int cityPopulation1 = dis.readInt();
             float cityTemperature1 = dis.readFloat();
 
-            System.out.println("Id: " + cityId1);
-            System.out.println("Name: " + cityName1);
-            System.out.println("Population: " + cityPopulation1);
-            System.out.println("Temperature: " + cityTemperature1);
+            printOut(cityId1, cityName1, cityPopulation1, cityTemperature1);
 
             // Read the second data
             int cityId2 = dis.readInt();
@@ -71,12 +71,16 @@ public class PrimitiveStreamExample {
             int cityPopulation2 = dis.readInt();
             float cityTemperature2 = dis.readFloat();
 
-            System.out.println("Id: " + cityId2);
-            System.out.println("Name: " + cityName2);
-            System.out.println("Population: " + cityPopulation2);
-            System.out.println("Temperature: " + cityTemperature2);
+            printOut(cityId2, cityName2, cityPopulation2, cityTemperature2);
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private static void printOut(int cityId1, String cityName1, int cityPopulation1, float cityTemperature1) {
+        System.out.println("Id: " + cityId1);
+        System.out.println("Name: " + cityName1);
+        System.out.println("Population: " + cityPopulation1);
+        System.out.println("Temperature: " + cityTemperature1);
     }
 }

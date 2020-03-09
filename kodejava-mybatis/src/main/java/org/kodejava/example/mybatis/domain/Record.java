@@ -9,8 +9,6 @@ public class Record implements Serializable {
     private Date releaseDate;
     private Long artistId;
     private Long labelId;
-    private Date created;
-    private Date modified;
 
     public Long getId() {
         return id;
@@ -50,22 +48,6 @@ public class Record implements Serializable {
 
     public void setLabelId(Long labelId) {
         this.labelId = labelId;
-    }
-
-    public Date getCreated() {
-        return created;
-    }
-
-    public void setCreated(Date created) {
-        this.created = created;
-    }
-
-    public Date getModified() {
-        return modified;
-    }
-
-    public void setModified(Date modified) {
-        this.modified = modified;
     }
 
     @Override

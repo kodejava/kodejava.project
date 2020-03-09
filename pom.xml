@@ -17,8 +17,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.2</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
         </plugins>
@@ -52,6 +52,21 @@
         <module>kodejava-network</module>
         <module>kodejava-jackson</module>
         <module>kodejava-jdbc</module>
+        <module>kodejava-json</module>
+        <module>kodejava-regex</module>
+        <module>kodejava-lombok</module>
+        <module>kodejava-script</module>
+        <module>kodejava-zip</module>
+        <module>kodejava-servlet-jsp</module>
+        <module>kodejava-jpa</module>
+        <module>kodejava-datetime</module>
+        <module>kodejava-mongodb</module>
+        <module>kodejava-spring-core</module>
+        <module>kodejava-hibernate</module>
+        <module>kodejava-itextpdf</module>
+        <module>kodejava-security</module>
+        <module>kodejava-joda-time</module>
+        <module>kodejava-stream</module>
     </modules>
 
     <properties>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="book1" class="org.kodejava.example.spring.el.Book">
+        <property name="type" value="Novel"/>
+    </bean>
+    <bean id="book2" class="org.kodejava.example.spring.el.Book">
+        <property name="type" value="#{book1.type != null ? book1.type : 'Novel'}"/>
+    </bean>
+    <bean id="book3" class="org.kodejava.example.spring.el.Book">
+        <property name="type" value="#{book1.type ?: 'Novel'}"/>
+    </bean>
+
+</beans>

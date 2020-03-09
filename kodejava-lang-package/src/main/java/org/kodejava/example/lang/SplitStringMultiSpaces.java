@@ -8,7 +8,7 @@ public class SplitStringMultiSpaces {
 
         // Split the string using the \s+ regex to split multi spaces
         // line of text.
-        String[] items = text.split("\\s+");
+        var items = text.split("\\s+");
         System.out.println("Length = " + items.length);
         System.out.println("Items  = " + Arrays.toString(items));
     }

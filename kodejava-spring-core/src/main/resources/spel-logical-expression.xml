@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="smallGlass" class="org.kodejava.example.spring.el.MyOtherGlass">
+        <constructor-arg name="volume" value="5"/>
+        <constructor-arg name="maxVolume" value="10"/>
+        <property name="largeGlass"
+                  value="#{smallGlass.maxVolume ge 20 and smallGlass.maxVolume le 30}"/>
+    </bean>
+    <bean id="largeGlass" class="org.kodejava.example.spring.el.MyOtherGlass">
+        <constructor-arg name="volume" value="5"/>
+        <constructor-arg name="maxVolume" value="30"/>
+        <property name="largeGlass"
+                  value="#{largeGlass.maxVolume ge 20 and largeGlass.maxVolume le 30}"/>
+    </bean>
+
+</beans>

@@ -31,6 +31,7 @@ public class HttpGetProxy {
 
         try {
             client.executeMethod(method);
+
             if (method.getStatusCode() == HttpStatus.SC_OK) {
                 String response = method.getResponseBodyAsString();
                 System.out.println("Response = " + response);

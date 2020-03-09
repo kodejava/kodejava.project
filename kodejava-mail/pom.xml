@@ -18,13 +18,15 @@
     </properties>
 
     <dependencies>
-        <!-- http://repo1.maven.org/maven2/javax/mail/javax.mail-api/1.5.6/javax.mail-api-1.5.6.jar -->
+        <!-- https://search.maven.org/remotecontent?filepath=javax/mail/javax.mail-api/1.6.2/javax.mail-api-1.6.2.jar -->
+        <!-- [![Maven Central](https://img.shields.io/maven-central/v/javax.mail/javax.mail-api.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22javax.mail%22%20AND%20a:%22javax.mail-api%22) -->
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>javax.mail-api</artifactId>
-            <version>1.5.6</version>
+            <version>1.6.2</version>
         </dependency>
-        <!-- http://repo1.maven.org/maven2/javax/mail/mail/1.4.7/mail-1.4.7.jar -->
+        <!-- https://search.maven.org/remotecontent?filepath=javax/mail/mail/1.4.7/mail-1.4.7.jar -->
+        <!-- [![Maven Central](https://img.shields.io/maven-central/v/javax.mail/mail.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22javax.mail%22%20AND%20a:%22mail%22) -->
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>

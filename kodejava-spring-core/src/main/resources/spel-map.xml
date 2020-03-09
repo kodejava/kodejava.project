@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:map id="books">
+        <entry key="0-201-61622-X" value="The Pragmatic Programmer"/>
+        <entry key="978-1-934356-56-2" value="Hello, Android"/>
+        <entry key="978-1-933988-69-6" value="Secret of The JavaScript Ninja"/>
+        <entry key="978-1-449-37017-6" value="Java EE 7 Essentials"/>
+        <entry key="9781935182962" value="Spring Roo in Action"/>
+    </util:map>
+
+    <bean id="book1" class="org.kodejava.example.spring.el.Book"
+          p:title="#{books['9781935182962']}"/>
+    <bean id="book2" class="org.kodejava.example.spring.el.Book"
+          p:title="#{books['978-1-933988-69-6']}"/>
+
+</beans>

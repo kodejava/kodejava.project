@@ -19,7 +19,7 @@ public class StringAlignment {
         String dateFormat = " %2$tb %2$td, %2$tY  | ";
         String ageFormat = " %3$3s |%n";
         String format = nameFormat.concat(dateFormat).concat(ageFormat);
-        String line = new String(new char[48]).replace('\0', '-');
+        String line = new String(new char[48]).replace("\u0000", "-");
 
         System.out.println(line);
         System.out.printf("|%s|%s|%s|%n",

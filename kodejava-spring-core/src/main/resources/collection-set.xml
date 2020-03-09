@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="song1" class="org.kodejava.example.spring.collection.Song">
+        <property name="title" value="I Saw Her Standing There" />
+        <property name="writer" value="Beatles" />
+    </bean>
+
+    <bean id="song2" class="org.kodejava.example.spring.collection.Song">
+        <property name="title" value="Misery" />
+        <property name="writer" value="Beatles" />
+    </bean>
+
+    <bean id="song3" class="org.kodejava.example.spring.collection.Song">
+        <property name="title" value="Anna (Go to Him)" />
+        <property name="writer" value="Beatles" />
+    </bean>
+
+
+    <bean id="album" class="org.kodejava.example.spring.collection.Album">
+        <property name="title" value="Please Please Me"/>
+        <property name="year" value="1963"/>
+        <property name="songs">
+            <set>
+                <ref bean="song1"/>
+                <ref bean="song1"/>
+                <ref bean="song1"/>
+            </set>
+        </property>
+    </bean>
+
+</beans>

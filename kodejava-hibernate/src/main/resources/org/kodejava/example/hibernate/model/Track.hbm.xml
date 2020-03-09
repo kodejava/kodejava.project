@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="org.kodejava.example.hibernate.model.Track" table="tracks">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="title" not-null="true"/>
+        <property name="duration" type="java.lang.Integer"/>
+        <many-to-one name="artist" column="artist_id"
+                     class="org.kodejava.example.hibernate.model.Artist"/>
+        <many-to-one name="genre" column="genre_id"
+                     class="org.kodejava.example.hibernate.model.Genre"/>
+        <many-to-one name="record" column="record_id"
+                     class="org.kodejava.example.hibernate.model.Record"/>
+    </class>
+</hibernate-mapping>

@@ -18,6 +18,7 @@ public class DayOfYearToDate {
         // calendar object.
         int year = 2020;
         calendar.set(Calendar.YEAR, year);
+        calendar.set(Calendar.DAY_OF_YEAR, dayOfYear);
         System.out.println("Day " + dayOfYear + " in year " + year
             + " = " + calendar.getTime());
     }

@@ -1,28 +1,28 @@
-package org.kodejava.example.sql;
+package org.kodejava.example.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
 public class HowManyRowExample {
+    private static final String URL = "jdbc:mysql://localhost/kodejava";
+    private static final String USERNAME = "root";
+    private static final String PASSWORD = "";
+
     public static void main(String[] args) throws Exception {
-        Connection connection = null;
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(
-                "jdbc:mysql://localhost/kodejava", "root", "");
+        try (Connection connection =
+                 DriverManager.getConnection(URL, USERNAME, PASSWORD)) {
 
-            PreparedStatement ps = connection.prepareStatement(
-                "UPDATE books SET title = ? WHERE id = ?");
-            ps.setString(1, "Java Tutorial 3rd Edition");
-            ps.setInt(2, 1);
+            String sql = "UPDATE books " +
+                "SET title = ?, published_year = ? " +
+                "WHERE isbn = ?";
+
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.setString(1, "Java 8 in Action, First Edition");
+            ps.setInt(2, 2014);
+            ps.setString(3, "9781617291999");
             int rows = ps.executeUpdate();
-
-            System.out.printf("%d row(s) updated!", rows);
-        } finally {
-            if (connection != null && !connection.isClosed()) {
-                connection.close();
-            }
+            System.out.printf("%d row(s) updated!%n", rows);
         }
     }
 }

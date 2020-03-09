@@ -1,6 +1,6 @@
 package org.kodejava.example.commons.lang;
 
-import org.apache.commons.lang.time.DateFormatUtils;
+import org.apache.commons.lang3.time.DateFormatUtils;
 
 import java.util.Date;
 
@@ -10,12 +10,12 @@ public class DateFormattingDemo {
 
         // ISO8601 formatter for date-time without time zone.
         // The format used is yyyy-MM-dd'T'HH:mm:ss.
-        String timestamp = DateFormatUtils.ISO_DATETIME_FORMAT.format(today);
+        String timestamp = DateFormatUtils.ISO_8601_EXTENDED_DATETIME_FORMAT.format(today);
         System.out.println("timestamp = " + timestamp);
 
         // ISO8601 formatter for date-time with time zone.
         // The format used is yyyy-MM-dd'T'HH:mm:ssZZ.
-        timestamp = DateFormatUtils.ISO_DATETIME_TIME_ZONE_FORMAT.format(today);
+        timestamp = DateFormatUtils.ISO_8601_EXTENDED_DATETIME_TIME_ZONE_FORMAT.format(today);
         System.out.println("timestamp = " + timestamp);
 
         // The format used is EEE, dd MMM yyyy HH:mm: ss Z in US locale.

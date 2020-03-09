@@ -11,11 +11,13 @@
 
     <artifactId>kodejava-jdbc</artifactId>
 
-    <!--<dependencies>-->
-        <!--<dependency>-->
-            <!--<groupId>mysql</groupId>-->
-            <!--<artifactId>mysql-connector-java</artifactId>-->
-            <!--<version>5.1.46</version>-->
-        <!--</dependency>-->
-    <!--</dependencies>-->
+    <dependencies>
+<!-- https://search.maven.org/remotecontent?filepath=mysql/mysql-connector-java/8.0.17/mysql-connector-java-8.0.17.jar -->
+<!-- [![Maven Central](https://img.shields.io/maven-central/v/mysql/mysql-connector-java.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22mysql%22%20AND%20a:%22mysql-connector-java%22) -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.17</version>
+</dependency>
+    </dependencies>
 </project>

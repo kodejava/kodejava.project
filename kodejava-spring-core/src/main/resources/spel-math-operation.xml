@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="myBean" class="org.kodejava.example.spring.el.MyBean">
+        <property name="total" value="#{50 + 50}"/>
+        <property name="length" value="#{100 - 10}"/>
+        <property name="size" value="#{10 * 10}"/>
+        <property name="reminder" value="#{10 % 3}"/>
+        <property name="distance" value="#{1000 / 10}"/>
+        <property name="power" value="#{2 ^ 10}"/>
+    </bean>
+
+</beans>

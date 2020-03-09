@@ -1,15 +1,15 @@
 package org.kodejava.example.commons.lang;
 
-import org.apache.commons.lang.time.DateFormatUtils;
-import org.apache.commons.lang.time.DateUtils;
-import org.apache.commons.lang.time.FastDateFormat;
+import org.apache.commons.lang3.time.DateFormatUtils;
+import org.apache.commons.lang3.time.DateUtils;
+import org.apache.commons.lang3.time.FastDateFormat;
 
 import java.util.Calendar;
 import java.util.Date;
 
 public class DateRoundingDemo {
     public static void main(String[] args) {
-        FastDateFormat formatter = DateFormatUtils.ISO_DATETIME_TIME_ZONE_FORMAT;
+        FastDateFormat formatter = DateFormatUtils.ISO_8601_EXTENDED_DATETIME_TIME_ZONE_FORMAT;
 
         Date now = new Date();
         System.out.println("now = " + formatter.format(now));

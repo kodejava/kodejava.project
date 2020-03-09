@@ -1,6 +1,6 @@
 package org.kodejava.example.commons.lang;
 
-import org.apache.commons.lang.ArrayUtils;
+import org.apache.commons.lang3.ArrayUtils;
 
 public class ArrayUtilsIndexOfDemo {
     public static void main(String[] args) {

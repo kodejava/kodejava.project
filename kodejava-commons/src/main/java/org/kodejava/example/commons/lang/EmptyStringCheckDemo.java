@@ -1,6 +1,6 @@
 package org.kodejava.example.commons.lang;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class EmptyStringCheckDemo {
     public static void main(String[] args) {

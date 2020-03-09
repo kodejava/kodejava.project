@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="org.kodejava.example.spring.el.User">
+        <constructor-arg name="email" value="kodejava@gmail.com"/>
+        <property name="emailValid"
+                  value="#{user.email matches '^[_A-Za-z0-9-]+(.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(.[A-Za-z0-9]+)*(.[A-Za-z]{2,})$'}"/>
+    </bean>
+
+    <bean id="user2" class="org.kodejava.example.spring.el.User">
+        <constructor-arg name="email" value="kodejava.at.gmail.dot.com"/>
+        <property name="emailValid"
+                  value="#{user2.email matches '^[_A-Za-z0-9-]+(.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(.[A-Za-z0-9]+)*(.[A-Za-z]{2,})$'}"/>
+    </bean>
+
+</beans>

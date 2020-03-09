@@ -6,6 +6,7 @@ import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.GetMethod;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 public class HttpGetDemo {
     public static void main(String[] args) {
@@ -22,7 +23,8 @@ public class HttpGetDemo {
                     Writer writer = new StringWriter();
                     char[] buffer = new char[1024];
                     try {
-                        Reader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+                        Reader reader = new BufferedReader(new InputStreamReader(is,
+                            StandardCharsets.UTF_8));
                         int length;
                         while ((length = reader.read(buffer)) != -1) {
                             writer.write(buffer, 0, length);

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:list id="books">
+        <bean class="org.kodejava.example.spring.el.Book"
+              p:title="Essential C# 4.0" p:author="Michaelis"/>
+        <bean class="org.kodejava.example.spring.el.Book"
+              p:title="User Stories Applied" p:author="Mike Cohen"/>
+        <bean class="org.kodejava.example.spring.el.Book"
+              p:title="Learning Android" p:author="Marco Gargenta"/>
+        <bean class="org.kodejava.example.spring.el.Book"
+              p:title="The Ruby Programming Language"
+              p:author="David Flanagan &amp; Yukihiro Matsumoto"/>
+        <bean class="org.kodejava.example.spring.el.Book"
+              p:title="Einstein" p:author="Walter Isaacson"/>
+    </util:list>
+
+    <bean id="book" class="org.kodejava.example.spring.el.Book">
+        <property name="title" value="#{books[3].title}"/>
+        <property name="author" value="#{books[3].author}"/>
+    </bean>
+
+</beans>

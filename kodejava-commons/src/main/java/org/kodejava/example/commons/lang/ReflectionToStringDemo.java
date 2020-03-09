@@ -1,7 +1,7 @@
 package org.kodejava.example.commons.lang;
 
-import org.apache.commons.lang.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang.builder.ToStringStyle;
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 public class ReflectionToStringDemo {
     private Integer id;

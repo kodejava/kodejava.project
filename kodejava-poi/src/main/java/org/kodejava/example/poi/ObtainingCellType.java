@@ -8,8 +8,6 @@ import org.apache.poi.ss.usermodel.CellType;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Iterator;
 
 public class ObtainingCellType {
@@ -28,7 +26,7 @@ public class ObtainingCellType {
                 while (cells.hasNext()) {
                     HSSFCell cell = (HSSFCell) cells.next();
 
-                    CellType type = cell.getCellTypeEnum();
+                    CellType type = cell.getCellType();
                     if (type == CellType.STRING) {
                         System.out.println("[" + cell.getRowIndex() + ", "
                             + cell.getColumnIndex() + "] = STRING; Value = "
@@ -37,11 +35,6 @@ public class ObtainingCellType {
                         System.out.println("[" + cell.getRowIndex() + ", "
                             + cell.getColumnIndex() + "] = NUMERIC; Value = "
                             + cell.getNumericCellValue());
-
-                        int value = new BigDecimal(cell.getNumericCellValue()).setScale(0, RoundingMode.HALF_UP).intValue();
-                        System.out.println("value = " + value);
-                        value = new Double(cell.getNumericCellValue()).intValue();
-                        System.out.println("value = " + value);
                     } else if (type == CellType.BOOLEAN) {
                         System.out.println("[" + cell.getRowIndex() + ", "
                             + cell.getColumnIndex() + "] = BOOLEAN; Value = "

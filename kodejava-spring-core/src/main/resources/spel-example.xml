@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="grade" class="org.kodejava.example.spring.el.Grade">
+        <property name="name" value="Beginner"/>
+        <property name="description" value="A beginner grade."/>
+    </bean>
+    <bean id="student" class="org.kodejava.example.spring.el.Student">
+        <property name="name" value="Alice"/>
+        <property name="grade" value="#{grade.name}"/>
+    </bean>
+
+</beans>

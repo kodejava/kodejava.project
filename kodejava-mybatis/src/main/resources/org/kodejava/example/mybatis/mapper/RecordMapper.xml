@@ -16,9 +16,7 @@
             title,
             release_date,
             artist_id,
-            label_id,
-            created,
-            modified
+            label_id
         FROM records
         WHERE id = #{id}
     </select>

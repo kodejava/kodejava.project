@@ -19,13 +19,14 @@ public class DateCellType {
 
             // Read a cell the first cell on the sheet.
             HSSFCell cell = sheet.getRow(0).getCell(0);
-            if (cell.getCellTypeEnum() == CellType.NUMERIC) {
+            if (cell.getCellType() == CellType.NUMERIC) {
                 System.out.println("Cell type for date data type is numeric.");
             }
 
             // Using HSSFDateUtil to check if a cell contains a date.
             if (HSSFDateUtil.isCellDateFormatted(cell)) {
-                System.out.println("The cell contains a date value: " + cell.getDateCellValue());
+                System.out.println("The cell contains a date value: "
+                    + cell.getDateCellValue());
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

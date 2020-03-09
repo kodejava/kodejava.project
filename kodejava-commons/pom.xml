@@ -30,17 +30,18 @@
             <artifactId>commons-net</artifactId>
             <version>3.6</version>
         </dependency>
-        <!-- http://repo1.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar -->
+        <!-- http://repo1.maven.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.jar -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.5</version>
-        </dependency>
-        <!-- http://repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar -->
-        <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
             <version>2.6</version>
+        </dependency>
+        <!-- https://search.maven.org/remotecontent?filepath=org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar -->
+        <!-- [![Maven Central](https://img.shields.io/maven-central/v/org.apache.commons/commons-lang3.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22org.apache.commons%22%20AND%20a:%22commons-lang3%22) -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
         </dependency>
         <!-- http://repo1.maven.org/maven2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar -->
         <dependency>
@@ -48,10 +49,66 @@
             <artifactId>commons-httpclient</artifactId>
             <version>3.1</version>
         </dependency>
+        <!-- https://search.maven.org/remotecontent?filepath=org/apache/httpcomponents/httpclient/4.5.9/httpclient-4.5.9.jar -->
+        <!-- [![Maven Central](https://img.shields.io/maven-central/v/org.apache.httpcomponents/httpclient.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22org.apache.httpcomponents%22%20AND%20a:%22httpclient%22) -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.3</version>
+            <version>4.5.9</version>
         </dependency>
+        <!-- https://search.maven.org/remotecontent?filepath=org/apache/httpcomponents/httpmime/4.5.9/httpmime-4.5.9.jar -->
+        <!-- [![Maven Central](https://img.shields.io/maven-central/v/org.apache.httpcomponents/httpmime.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22org.apache.httpcomponents%22%20AND%20a:%22httpmime%22) -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>4.5.9</version>
+        </dependency>
+        <!-- https://search.maven.org/remotecontent?filepath=org/apache/commons/commons-text/1.7/commons-text-1.7.jar -->
+        <!-- [![Maven Central](https://img.shields.io/maven-central/v/org.apache.commons/commons-text.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22org.apache.commons%22%20AND%20a:%22commons-text%22) -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <!-- https://search.maven.org/remotecontent?filepath=commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar -->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.3</version>
+        </dependency>
+        <!-- https://search.maven.org/remotecontent?filepath=commons-codec/commons-codec/1.12/commons-codec-1.12.jar -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.12</version>
+        </dependency>
+        <!-- https://search.maven.org/remotecontent?filepath=commons-fileupload/commons-fileupload/1.4/commons-fileupload-1.4.jar -->
+        <!-- [![Maven Central](https://img.shields.io/maven-central/v/commons-fileupload/commons-fileupload.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22commons-fileupload%22%20AND%20a:%22commons-fileupload%22) -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.4</version>
+        </dependency>
+<!-- https://search.maven.org/remotecontent?filepath=org/apache/commons/commons-dbcp2/2.6.0/commons-dbcp2-2.6.0.jar -->
+<!-- [![Maven Central](https://img.shields.io/maven-central/v/org.apache.commons/commons-dbcp2.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22org.apache.commons%22%20AND%20a:%22commons-dbcp2%22) -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-dbcp2</artifactId>
+    <version>2.6.0</version>
+</dependency>
+<!-- https://search.maven.org/remotecontent?filepath=mysql/mysql-connector-java/8.0.17/mysql-connector-java-8.0.17.jar -->
+<!-- [![Maven Central](https://img.shields.io/maven-central/v/mysql/mysql-connector-java.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22mysql%22%20AND%20a:%22mysql-connector-java%22) -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.17</version>
+</dependency>
+<!-- https://search.maven.org/remotecontent?filepath=org/apache/commons/commons-pool2/2.6.2/commons-pool2-2.6.2.jar -->
+<!-- [![Maven Central](https://img.shields.io/maven-central/v/org.apache.commons/commons-pool2.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22org.apache.commons%22%20AND%20a:%22commons-pool2%22) -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-pool2</artifactId>
+    <version>2.6.2</version>
+</dependency>
     </dependencies>
 </project>

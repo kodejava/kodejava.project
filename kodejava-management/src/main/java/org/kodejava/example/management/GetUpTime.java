@@ -10,6 +10,6 @@ public class GetUpTime {
         // Returns the up time of the Java virtual machine in
         // milliseconds.
         long upTime = bean.getUptime();
-        System.out.printf("Up Time = %d (ms)", upTime);
+        System.out.printf("Up Time = %d (ms).", upTime);
     }
 }
