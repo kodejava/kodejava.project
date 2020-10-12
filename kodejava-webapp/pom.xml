@@ -15,7 +15,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
         <!-- http://repo1.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.jar -->
