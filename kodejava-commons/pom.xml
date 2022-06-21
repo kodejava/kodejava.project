@@ -101,7 +101,7 @@
 <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
-    <version>8.0.17</version>
+    <version>8.0.28</version>
 </dependency>
 <!-- https://search.maven.org/remotecontent?filepath=org/apache/commons/commons-pool2/2.6.2/commons-pool2-2.6.2.jar -->
 <!-- [![Maven Central](https://img.shields.io/maven-central/v/org.apache.commons/commons-pool2.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22org.apache.commons%22%20AND%20a:%22commons-pool2%22) -->
