@@ -23,7 +23,7 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>4.1.0</version>
+            <version>4.1.1</version>
         </dependency>
         <!-- https://search.maven.org/remotecontent?filepath=org/apache/poi/poi-scratchpad/4.1.0/poi-scratchpad-4.1.0.jar -->
         <!-- [![Maven Central](https://img.shields.io/maven-central/v/org.apache.poi/poi-scratchpad.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22org.apache.poi%22%20AND%20a:%22poi-scratchpad%22) -->
